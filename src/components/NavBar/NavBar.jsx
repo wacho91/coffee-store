@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 
 const NavBar = ({sidebar, setSidebar}) => {
   return (
-    <div className="absolute top-0  left-0 w-full pt-7 text-white z-40">
+    <div className="absolute top-0  left-0 w-full pt-7 text-white z-[9999]">
       <div className="container">
         <div className="flex justify-between items-center">
             {/*Logo Section*/}

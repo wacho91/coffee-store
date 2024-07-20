@@ -27,7 +27,7 @@ const Hero = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[680px]">
                     {/*Text content section*/}
                     <div className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-20'>
-                        <motion.h1 initial={{opacity: 0, y: -100}} animate={{opacity: 1, y: 0}} transition={{type: "spring", stiffness: 100, damping: 10, delay: 1}} className='text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</motion.h1>
+                        <motion.h1 initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y: 0}} viewport={{once: true}} transition={{type: "spring", stiffness: 100, damping: 10, delay: 1}} className='text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</motion.h1>
                         <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{type: "spring", stiffness: 100, damping: 10, delay: 1.2}} className='relative'>
                             <div className='relative z-10 space-y-4'>
                                 <h1 className='text-2xl'>Black lifestyle lovers,</h1>
@@ -56,21 +56,23 @@ const Hero = () => {
                         </motion.div>
                     </div>
                     {/*Third div setion*/}
-                    <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{type: "spring", stiffness: 100, damping: 10, delay: 1.2}} className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-52'>
-                        <h1 className='opacity-0 hidden text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</h1>
-                        <div className='relative'>
-                            <div className='relative z-10 space-y-4'>
-                                <h1 className='text-2xl'>Black Tumber</h1>
-                                <h1 className='text-sm opacity-55 leading-loose'>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                    Labore ducimus perferendis exercitationem 
-                                    reiciendis, sint at!
-                                </h1>
+                    <div className='hidden lg:block'>
+                        <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}} transition={{type: "spring", stiffness: 100, damping: 10, delay: 1.2}} className='text-lightOrange mt-[100px] md:mt-0 p-4 space-y-52'>
+                            <h1 className='opacity-0 hidden text-7xl font-bold leading-tight ml-14'>Blvck Tumbler</h1>
+                            <div className='relative'>
+                                <div className='relative z-10 space-y-4'>
+                                    <h1 className='text-2xl'>Black Tumber</h1>
+                                    <h1 className='text-sm opacity-55 leading-loose'>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Labore ducimus perferendis exercitationem 
+                                        reiciendis, sint at!
+                                    </h1>
+                                </div>
+                                <div className='absolute -top-6 -right-10 w-[250x] h-[190px] bg-darkGray/50'></div>
                             </div>
-                            <div className='absolute -top-6 -right-10 w-[250x] h-[190px] bg-darkGray/50'></div>
-                        </div>
-                    </motion.div>
-                    <div></div>
+                        </motion.div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
 
